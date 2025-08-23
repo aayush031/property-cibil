@@ -93,6 +93,33 @@ export function HeroSection() {
                         <span className="highlight animate-highlight-pulse">AI-powered property verification portal</span>. Get
                         instant credibility scores, detect fraudulent listings, and make safe property investments with confidence.
                     </p>
+
+                    {/* New Section - Add your content here */}
+                    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 mb-8 shadow-lg border border-blue-200/50 max-w-4xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="text-center group">
+                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white font-bold text-xl">✓</span>
+                                </div>
+                                <h3 className="font-bold text-gray-800 mb-2">Instant Verification</h3>
+                                <p className="text-gray-600 text-sm">Get property credibility scores in under 3 minutes</p>
+                            </div>
+                            <div className="text-center group">
+                                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white font-bold text-xl">🛡️</span>
+                                </div>
+                                <h3 className="font-bold text-gray-800 mb-2">Fraud Detection</h3>
+                                <p className="text-gray-600 text-sm">Advanced AI algorithms detect fraudulent listings</p>
+                            </div>
+                            <div className="text-center group">
+                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white font-bold text-xl">📊</span>
+                                </div>
+                                <h3 className="font-bold text-gray-800 mb-2">Smart Analytics</h3>
+                                <p className="text-gray-600 text-sm">Comprehensive property analysis and risk assessment</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div
