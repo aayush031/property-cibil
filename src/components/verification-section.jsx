@@ -153,7 +153,7 @@ export function VerificationSection() {
                             </div>
 
                             <div className="text-center mt-8">
-                                <button className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-lg">
+                                <button className="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-lg ">
                                     Start Verification Now
                                 </button>
                             </div>
