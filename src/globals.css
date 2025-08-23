@@ -1,0 +1,399 @@
+@import "tw-animate-css";
+@import "tailwindcss";
+
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.985 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.396 0.141 25.723);
+    --destructive-foreground: oklch(0.637 0.237 25.331);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: oklch(0.439 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(0.269 0 0);
+    --sidebar-ring: oklch(0.439 0 0);
+    
+}
+
+:root {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+    * {
+        border-color: var(--border);
+        outline: 1px solid var(--ring);
+        outline-offset: -1px;
+    }
+
+    body {
+        background-color: var(--background);
+        color: var(--foreground);
+    }
+}
+
+/* Added comprehensive animation keyframes and utility classes */
+@layer utilities {
+
+    /* Floating animations */
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        33% {
+            transform: translateY(-10px) rotate(1deg);
+        }
+
+        66% {
+            transform: translateY(-5px) rotate(-1deg);
+        }
+    }
+
+    @keyframes float-reverse {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        33% {
+            transform: translateY(10px) rotate(-1deg);
+        }
+
+        66% {
+            transform: translateY(5px) rotate(1deg);
+        }
+    }
+
+    /* Card animations */
+    @keyframes card-float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+
+    @keyframes card-slide-up {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Text animations */
+    @keyframes gradient-text {
+
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+
+    @keyframes text-glow {
+
+        0%,
+        100% {
+            text-shadow: 0 0 5px rgba(239, 68, 68, 0.3);
+        }
+
+        50% {
+            text-shadow: 0 0 20px rgba(239, 68, 68, 0.6), 0 0 30px rgba(239, 68, 68, 0.4);
+        }
+    }
+
+    @keyframes highlight-pulse {
+
+        0%,
+        100% {
+            background-color: var(--highlight);
+        }
+
+        50% {
+            background-color: oklch(0.95 0.08 60);
+        }
+    }
+
+    /* Interactive animations */
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-2px);
+        }
+
+        75% {
+            transform: translateX(2px);
+        }
+    }
+
+    @keyframes tick {
+
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin-slow {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes bounce-slow {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes pulse-slow {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.7;
+        }
+    }
+
+    @keyframes expand {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -200% 0;
+        }
+
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    @keyframes button-glow {
+
+        0%,
+        100% {
+            box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+        }
+
+        50% {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+        }
+    }
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    /* Animation utility classes */
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-float-reverse {
+        animation: float-reverse 5s ease-in-out infinite;
+    }
+
+    /* Added float-delayed animation for staggered floating elements */
+    .animate-float-delayed {
+        animation: float 6s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    .animate-card-float {
+        animation: card-float 4s ease-in-out infinite;
+    }
+
+    .animate-card-slide-up {
+        animation: card-slide-up 0.6s ease-out forwards;
+    }
+
+    .animate-gradient-text {
+        background: linear-gradient(-45deg, #3b82f6, #1d4ed8, #2563eb, #1e40af);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradient-text 3s ease infinite;
+    }
+
+    .animate-text-glow {
+        animation: text-glow 2s ease-in-out infinite;
+    }
+
+    .animate-highlight-pulse {
+        animation: highlight-pulse 2s ease-in-out infinite;
+    }
+
+    .animate-shake {
+        animation: shake 0.5s ease-in-out infinite;
+    }
+
+    .animate-tick {
+        animation: tick 2s linear infinite;
+    }
+
+    .animate-spin-slow {
+        animation: spin-slow 3s linear infinite;
+    }
+
+    .animate-bounce-slow {
+        animation: bounce-slow 2s ease-in-out infinite;
+    }
+
+    .animate-pulse-slow {
+        animation: pulse-slow 3s ease-in-out infinite;
+    }
+
+    .animate-expand {
+        animation: expand 1s ease-out forwards;
+    }
+
+    .animate-shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+    }
+
+    .animate-button-glow {
+        animation: button-glow 2s ease-in-out infinite;
+    }
+
+    .animate-blink {
+        animation: blink 1.5s ease-in-out infinite;
+    }
+
+    /* Interactive hover effects */
+    .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .hover-scale {
+        transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+        transform: scale(1.05);
+    }
+
+    /* Background patterns */
+    .bg-grid-pattern {
+        background-image: radial-gradient(circle, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+}
