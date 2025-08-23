@@ -93,6 +93,7 @@ export function HeroSection() {
                         <span className="highlight animate-highlight-pulse">AI-powered property verification portal</span>. Get
                         instant credibility scores, detect fraudulent listings, and make safe property investments with confidence.
                     </p>
+
                 </div>
 
                 <div
