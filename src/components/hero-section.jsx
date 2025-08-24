@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge"
 import { Shield, TrendingUp, Clock } from "lucide-react"
 import { useEffect, useState } from "react"
+import CibilScoreSemiCircleMeter from "./cibil-meter"
+
 
 export function HeroSection() {
     const [isVisible, setIsVisible] = useState(false)
@@ -70,11 +72,13 @@ export function HeroSection() {
                 >
                     <Badge
                         variant="secondary"
-                        className="bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium hover:scale-110 transition-transform duration-300 animate-pulse-slow"
+                        className="!rounded-2xl !inline-flex !items-center !justify-center gap-2 bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium hover:scale-110 transition-transform duration-300 animate-pulse-slow"
                     >
-                        <Shield className="w-4 h-4 mr-2 animate-spin-slow" />
-                        Trusted by 1,000+ Property Buyers
+                        <Shield className="w-4 h-4 animate-spin-slow" />
+                        <span>Trusted by 1,000+ Property Buyers</span>
                     </Badge>
+
+
                 </div>
 
                 <div
@@ -95,6 +99,66 @@ export function HeroSection() {
                     </p>
 
                 </div>
+             
+                <div className="text-center text-5xl font-bold animate-pulse-slow">
+                    <p className="m-0">IF A PERSON HAS <span className="text-red-700">CREDIT SCORE</span></p>
+                    <p className="m-0">WHY NOT PROPERTIES?</p>
+                </div>
+
+
+
+
+
+
+                <div
+                    className={`relative max-w-6xl mx-auto mb-16 transition-all duration-1500 delay-500 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                        }`}
+                >
+                    <div className="flex items-center gap-8 justify-center flex-wrap lg:flex-nowrap">
+                        {/* 1. Man image */}
+                        <div className="relative">
+                            <img
+                                src="/images/man.png"
+                                alt="Man holding board"
+                                className="w-80 h-auto object-contain"
+                            />
+                            <div className="absolute top-[45%] -translate-x-1/2 -translate-y-1/2 w-48 scale-50 mt-10 ml-26 ">
+                                <CibilScoreSemiCircleMeter />
+                            </div>
+                        </div>
+
+                        {/* 2. Text content */}
+                        <div className="border-4 rounded-4xl p-6  text-center">
+                            
+                               <p className="font-bold text-2xl">Property Cibil India's First 360-Degree</p>
+                            <p className="font-bold text-2xl text-red-700">Property Verification Platform</p>  
+                            
+                           
+                        </div>
+
+                        {/* 3. What image */}
+                        <div className="-mr-10 relative">
+                            <img
+                                src="/images/what.png"
+                                alt="What icon"
+                                className="w-32 h-auto object-contain z-10"
+                            />
+                        </div>
+
+                        {/* 4. House image */}
+                        <div className="relative">
+                            <img
+                                src="/images/house.png"
+                                alt="House"
+                                className="w-80 h-auto object-contain"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
                 <div
                     className={`grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto transition-all duration-1500 delay-600 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"

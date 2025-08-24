@@ -131,22 +131,22 @@ export function ServicesSection() {
                 </div>
 
                 <div className="text-center mt-20">
-                    <div className="bg-gradient-to-r from-primary via-blue-600 to-blue-700 text-white rounded-3xl p-12 md:p-16 relative overflow-hidden shadow-2xl">
+                    <div className="bg-blue-700 text-white rounded-3xl p-12 md:p-16 relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 opacity-10 bg-grid-pattern"></div>
 
                         <div className="relative z-10">
                             <h3 className="text-3xl md:text-4xl font-bold mb-6">Ready to Secure Your Property Investment?</h3>
                             <p className="text-blue-100 text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
                                 Join thousands of smart property buyers who trust PropertyCibil for
-                                <span className="bg-white/20 px-3 py-2 rounded-lg ml-2 font-semibold">
+                                <span className="px-3 rounded-lg font-bold text-red-900">
                                     fraud-free property transactions
                                 </span>
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                                <button className="bg-white text-primary hover:bg-gray-100 px-10 py-5 rounded-xl text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                                <button className="border-2 border-white text-primary hover:bg-gray-100 hover:text-yellow-500 hover:rounded-2xl px-10 py-5 rounded-xl text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                                     🚀 Start Free Verification
                                 </button>
-                                <button className="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-5 rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-105">
+                                <button className="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-5 rounded-xl text-xl  hover:text-yellow-500 hover:rounded-2xl font-bold transition-all duration-300 transform hover:scale-105">
                                     💬 Talk to Expert
                                 </button>
                             </div>
