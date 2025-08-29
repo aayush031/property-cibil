@@ -55,22 +55,22 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href ="/about" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href ="/about" className="text-gray-300 hover:text-primary">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Pricing Plans
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Blogs & News
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Contact Us
                                 </a>
                             </li>
@@ -81,22 +81,22 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-6">Legal</h3>
                         <ul className="space-y-3">
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Privacy Policy
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Terms of Service
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Disclaimer
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <a href="#" className="text-gray-300 hover:text-primary">
                                     Data Protection
                                 </a>
                             </li>
