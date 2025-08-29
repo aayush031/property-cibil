@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import CibilScoreSemiCircleMeter from "./cibil-meter"
 
 
-export function HeroSection() {
+export default function HeroSection() {
     const [isVisible, setIsVisible] = useState(false)
     const [animatedStats, setAnimatedStats] = useState({
         amount: 0,

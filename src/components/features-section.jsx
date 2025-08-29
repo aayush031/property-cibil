@@ -2,7 +2,7 @@
 
 import { CheckCircle, MapPin, Building, Navigation, Users, Camera, RotateCcw } from "lucide-react"
 
-export function FeaturesSection() {
+export default function FeaturesSection() {
     const features = [
         {
             icon: MapPin,

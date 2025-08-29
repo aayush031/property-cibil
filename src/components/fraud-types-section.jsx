@@ -2,7 +2,7 @@
 
 import { FileText, Building2, Users2 } from "lucide-react"
 
-export function FraudTypesSection() {
+export default function FraudTypesSection() {
     const fraudTypes = [
         {
             icon: FileText,

@@ -3,7 +3,7 @@
 import { AlertTriangle } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 
-export function StatsSection() {
+export default function StatsSection() {
     const [isVisible, setIsVisible] = useState(false)
     const [animatedStats, setAnimatedStats] = useState({
         percentage: 0,

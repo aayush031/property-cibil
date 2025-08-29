@@ -3,22 +3,22 @@
 import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import { useState } from "react"
 
-export function Footer() {
+export default function Footer() {
     const [email, setEmail] = useState("")
 
     const handleSubscribe = (e) => {
         e.preventDefault()
         console.log("[v0] Newsletter subscription:", email)
         setEmail("")
-        // Add actual subscription logic here
+
     }
 
     return (
         <footer className="bg-gray-900 text-white">
-            {/* Main Footer */}
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* Company Info */}
+
                     <div className="lg:col-span-1">
                         <div className="flex items-center space-x-2 mb-6">
                             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -55,9 +55,7 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
-                                    About Us
-                                </a>
+                                <a href="/about" class="text-gray-300 hover:text-primary transition-colors">About Us</a>
                             </li>
                             <li>
                                 <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
@@ -153,7 +151,7 @@ export function Footer() {
                 </div>
             </div>
 
-            {/* Bottom Footer */}
+
             <div className="border-t border-gray-800">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center">

@@ -2,7 +2,7 @@
 
 import { Clock, Database, AlertTriangle, Users } from "lucide-react"
 
-export function VerificationSection() {
+export default function VerificationSection() {
     const features = [
         {
             icon: Clock,

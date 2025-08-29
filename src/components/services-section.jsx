@@ -2,7 +2,7 @@
 
 import { Search, FileCheck, TrendingUp, AlertTriangle, Users, Shield } from "lucide-react"
 
-export function ServicesSection() {
+export default function ServicesSection() {
     const services = [
         {
             icon: Search,
