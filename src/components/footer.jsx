@@ -55,9 +55,9 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/about" className="text-gray-300 hover:text-primary transition-colors duration-200">
+                                <link to="/about" className="text-gray-300 hover:text-primary transition-colors duration-200">
                                     About Us
-                                </a>
+                                </link>
                             </li>
                             <li>
                                 <a href="#" className="text-gray-300 hover:text-primary transition-colors duration-200">
