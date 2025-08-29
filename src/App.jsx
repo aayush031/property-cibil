@@ -11,7 +11,7 @@ import About from "@/pages/About"
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/">
             <div className="min-h-screen bg-background">
                 <Navbar />
 
